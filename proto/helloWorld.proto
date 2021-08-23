@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto.helloWorld;
+option go_package = "twirp/service";
+
+service HelloWorld {
+  rpc Hello(HelloReq) returns (HelloResp);
+}
+
+message HelloReq {
+  string subject = 1;
+}
+
+message HelloResp {
+  string text = 1;
+}
