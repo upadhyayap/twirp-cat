@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	pb "github.com/upadhyayap/twirp-cat/services"
+	pb "github.com/upadhyayap/twirp-cat/twirp/service"
 )
 
 type HelloWorldServer struct{}
